@@ -7,8 +7,9 @@ db.once("open", () => {
   console.log('conexão com o banco feita com sucesso')
 })
 
-const app = express();
+const app = express()
 app.use(express.json())
-routes(app);
+
+routes(app)
 
 export default app
